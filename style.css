@@ -11,6 +11,8 @@ body{
     padding: 0 10px;
     font-family: sans-serif;
     background:#f8f8f8;
+    border-left:2px solid #bbb;
+    border-right:2px solid #bbb;
 }
 
 a:hover{ background: #444; color: #fff; text-decoration:none;}
@@ -57,6 +59,8 @@ header{
 
 header a{ margin: 0 0.6em 0 0; text-decoration:none;}
 header a.right{ float: right; margin: 0 0 0 0.6em;}
+
+section{margin:0.8em 0;}
 
 h2{
     position: sticky;

@@ -1,0 +1,15 @@
+title: "Cuaderno"
+author: "HC"
+description: ""
+url: "http://haztecaso.com"
+baseurl: "/"
+lang: "es"
+
+plugins: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag]
+markdown: CommonMarkGhPages
+
+permalink: /blog/:title/
+paginate_pathds: /blog/:num/
+paginate: 5
+
+exclude: [notes.md, _posts/2000-01-01-template.md]
