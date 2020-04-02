@@ -90,7 +90,7 @@ header{
 header img{ display:none;}
 
 header a{ margin: 0 0.6em 0 0; text-decoration:none;}
-header a.right{ float: right; margin: 0 0 0 0.6em;}
+header a.right{ margin: 0 0 0 0.6em;}
 
 section{margin:0.8em 0;}
 
@@ -108,7 +108,7 @@ h2{
 article{ margin-bottom:2em;}
 h2 a{ text-decoration:none; }
 h2 a:hover{ background: #444; color: #fff;}
-h2 time{font-weight:normal;}
+h2 time{float:right; font-weight:normal;}
 
 footer{
     padding:10px 0;
