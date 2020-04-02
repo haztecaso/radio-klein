@@ -46,6 +46,36 @@ code {
 	word-wrap: normal;
 }
 
+table { width:100%; border-collapse: collapse; }
+table, th, td { border: 1px solid black; }
+th { height: 50px; }
+th, td { padding: 10px; }
+
+.player{
+    height:72px;
+    padding:10px;
+    margin: 20px 0;
+    background:#eee;
+}
+.player > div { vertical-align:middle;}
+.player .amplitude-play-pause{
+    position:relative;
+    display:inline-block;
+    background:url("play.svg");
+    background-repeat:no-repeat;
+    background-position:center;
+    width:40px;
+    height:72px;
+    margin-left:10px;
+    margin-right:15px;
+    cursor:pointer;
+}
+.player .amplitude-playing{ background:url("pause.svg"); background-repeat:no-repeat; background-position:center; }
+.player .data { margin:0px; display: inline-block; position:relative;}
+.player .data span { display:block; margin-bottom:5px; max-width:300px; overflow:auto;}
+.player .data .title{font-weight:bold;}
+.player .data .listeners::after{content:' oyentes';}
+
 header{
     position: sticky;
     top:0px;
@@ -88,52 +118,6 @@ footer{
     border-top:2px solid #bbb;
 }
 
-table {
-  border-collapse: collapse;
-}
 
-table, th, td {
-  border: 1px solid black;
-}
-
-
-table {
-  width: 100%;
-}
-
-th {
-  height: 50px;
-}
-
-th, td {
-  padding: 10px;
-}
-
-
-.player{
-    height:72px;
-    padding:10px;
-    margin: 20px 0;
-    background:#eee;
-}
-.player > div { vertical-align:middle;}
-.player .amplitude-play-pause{
-    position:relative;
-    display:inline-block;
-    background:url("play.svg");
-    background-repeat:no-repeat;
-    background-position:center;
-    width:40px;
-    height:72px;
-    margin-left:10px;
-    margin-right:15px;
-    cursor:pointer;
-}
-
-.player .amplitude-playing{ background:url("pause.svg"); background-repeat:no-repeat; background-position:center; }
-.player .data { margin:0px; display: inline-block; position:relative;}
-.player .data span { display:block; margin-bottom:5px; max-width:300px; overflow:auto;}
-.player .data .title{font-weight:bold;}
-.player .data .listeners::after{content:' oyentes';}
 
 
