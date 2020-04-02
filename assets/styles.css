@@ -48,7 +48,6 @@ code {
 
 table { width:100%; border-collapse: collapse; }
 table, th, td { border: 1px solid black; }
-th { height: 50px; }
 th, td { padding: 10px; }
 
 .player{
