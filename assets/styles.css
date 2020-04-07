@@ -11,8 +11,6 @@ body{
     padding: 0 10px;
     font-family: sans-serif;
     background:#f8f8f8;
-    border-left:2px solid #bbb;
-    border-right:2px solid #bbb;
 }
 
 a:hover{ background: #444; color: #fff; text-decoration:none;}
