@@ -5,6 +5,10 @@ title: index
 {% for post in site.posts %}
 <article>
     <h2><span>{{ post.title }}</span><time>{{ post.date }}</time></h2>
-	<p>laalalalalala 1 lalalal alalal la lala lala  lalalal alalal la lala lala  lalalal alalal la lala lala  lalalal alalal la lala lala  lalalal alalal la lala lala  lalalal alalal la lala lala  lalalal alalal la lala lala  lalalal alalal la lala lala  lalalal alalal la lala lala  lalalal alalal la lala lala 0</p>
+    {{ post.excerpt }}
+    
+    {% if post.excerpt != post.content %}
+        <a href="{{ site.baseurl }}{{ post.url }}">Leer más...</a>
+    {% endif %}
 </article>
 {% endfor %}
