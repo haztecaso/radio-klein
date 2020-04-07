@@ -5,7 +5,7 @@ url: "http://haztecaso.mooo.com/"
 baseurl: "blog"
 lang: "es"
 
-plugins: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag]
+plugins: [jekyll-paginate]
 markdown: CommonMarkGhPages
 
 permalink: /blog/:title/
