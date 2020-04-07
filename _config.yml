@@ -5,6 +5,8 @@ url: "http://haztecaso.mooo.com"
 baseurl: "/blog"
 lang: "es"
 
+excerpt_separator: <!--more-->
+
 plugins: [jekyll-paginate]
 markdown: CommonMarkGhPages
 
