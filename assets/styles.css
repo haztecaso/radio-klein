@@ -72,6 +72,8 @@ h2{
     margin-bottom:0.8em;
 }
 article{ margin-bottom:2em;}
+article h2 a{ text-decoration:none; }
+article h2 a:hover{ background: #444; color: #fff;}
 article h2 span{  }
 article h2 time{float:right; font-weight:normal;}
 
