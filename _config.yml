@@ -8,7 +8,6 @@ lang: "es"
 excerpt_separator: <!--more-->
 
 plugins: [jekyll-paginate]
-markdown: CommonMarkGhPages
 
 permalink: /blog/:title/
 paginate_pathds: /blog/:num/
