@@ -1,0 +1,21 @@
+---
+layout: empty
+title: post list
+style: "body{padding:15px; }
+li{ list-style: none; margin-bottom:5px;}
+h1{margin-bottom:20px;}
+ul {
+height: 700px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}"
+---
+<h1>Project list</h1>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url}}" class="current" >{{ post.title }} - {{ post.url }}</a>
+  </li>
+  {% endfor %}
+</ul>
