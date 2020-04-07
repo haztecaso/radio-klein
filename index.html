@@ -4,7 +4,7 @@ title: index
 ---
 {% for post in site.posts %}
 <article>
-    <h2><span>{{ post.title }}</span><time>{{ post.date | date: "%d/%m/%Y" }}</time></h2>
+    <h2><a href="{{ site.baseurl }}{{ post.url }}"><span>{{ post.title }}</span></a><time>{{ post.date | date: "%d/%m/%Y" }}</time></h2>
     {{ post.excerpt }}
     
     {% if post.excerpt != post.content %}
