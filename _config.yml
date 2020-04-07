@@ -1,8 +1,8 @@
 title: "Cuaderno"
 author: "HC"
 description: ""
-url: "http://haztecaso.mooo.com/blog/"
-baseurl: "/"
+url: "http://haztecaso.mooo.com/"
+baseurl: "blog"
 lang: "es"
 
 plugins: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag]
