@@ -9,6 +9,10 @@ excerpt_separator: <!--more-->
 
 plugins: [jekyll-paginate]
 
+markdown: kramdown
+kramdown:
+  header_offset: 2
+
 permalink: /blog/:title/
 paginate_pathds: /blog/:num/
 paginate: 5
