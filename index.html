@@ -8,7 +8,9 @@ title: index
     {{ post.excerpt }}
     
     {% if post.excerpt != post.content %}
+    <p class="more">
         <a href="{{ site.baseurl }}{{ post.url }}">Leer más...</a>
+    </p>
     {% endif %}
 </article>
 {% endfor %}
