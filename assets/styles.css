@@ -50,7 +50,6 @@ header{
     padding-bottom:10px;
     margin-top:-20px;
     z-index:20;
-    background:#f8f8f8;
     border-bottom:2px solid #bbb;
     font-weight: bold;
 }
@@ -74,3 +73,12 @@ h2{
 article{ margin-bottom:2em;}
 article h2 span{  }
 article h2 time{float:right; font-weight:normal;}
+
+footer{
+    padding:10px 0;
+    margin-top:20px;
+    z-index:20;
+    background:#f8f8f8;
+    border-top:2px solid #bbb;
+    font-weight: bold;
+}
