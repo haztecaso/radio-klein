@@ -4,6 +4,6 @@ title: "Radio Juan"
 permalink: /radiojuan/
 ---
 
-Esta es una radio de Juan.
+Aquí, de momento, voy a reproducir los discos que voy escuchando a lo largo del día.
 
 
