@@ -6,8 +6,8 @@ permalink: /info/
 
 # Blog/Radio
 
-Aquí subiremos información sobre el proyecto.
-Blog/Radio de música autogestionada.
+Aquí subiremos información sobre el proyecto.  
+Blog/Radio de música autogestionado.
 
 # Software
 
