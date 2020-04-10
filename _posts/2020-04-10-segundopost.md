@@ -5,7 +5,7 @@ title: Programación
 ---
 Programación de la [radio](radio).
 
-|              | Sábado         |  Doming         |
+|              | Sábado         |  Domingo        |
 | :---         |     :---:      |            ---: |
 | 12:00        | biciclista     |   funkbike      |
 | 13:00        | cutrinhos      |   mateojazz     |
