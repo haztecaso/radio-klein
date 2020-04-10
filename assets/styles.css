@@ -89,6 +89,7 @@ footer{
 
 }
 .player ol li{ list-style:none;}
+.player ol li.metadata::before{ list-style:none;}
 
 .amplitude-play-pause{
     display:inline-block;
