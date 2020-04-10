@@ -10,7 +10,7 @@ permalink: /radio/
 <source src="https://haztecaso.mooo.com:8085/radiojuan" type="audio/mpeg">
 Your browser does not supnport the audio element.
 </audio>
-<p class="metadata"><span id="artistjuan"></span> - <span id="albumjuan"></span></p>
+<p id="titlejuan"></p>
 
 <h2>Radio Adri</h2>
 
@@ -18,7 +18,7 @@ Your browser does not supnport the audio element.
 <source src="https://haztecaso.mooo.com:8085/radio" type="audio/mpeg">
 Your browser does not supnport the audio element.
 </audio>
-<p class="metadata"><span id="artistadri"></span> - <span id="albumadri"></span></p>
+<p id="titleadri"></p>
 
 <script>
 // delegate event for performance, and save attaching a million events to each anchor
@@ -57,10 +57,8 @@ console.log(json);
 window.setInterval(function(){
 loadJSON(function(response) {
 	data = JSON.parse(response).icestats.source;
-	document.getElementById('artistjuan').innerHTML = data[1].artist;
-	document.getElementById('titlejuan').innerHTML =data[1].title;
-	document.getElementById('artistadri').innerHTML = data[0].artist;
-	document.getElementById('titleadri').innerHTML =data[0].title;
+	document.getElementById('titlejuan').innerHTML = data[1].title;
+	document.getElementById('titleadri').innerHTML = data[0].title;
  });
 }, 1000);
 
