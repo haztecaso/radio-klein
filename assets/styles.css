@@ -88,10 +88,16 @@ footer{
     border-top:2px solid #bbb;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 table, th, td {
   border: 1px solid black;
 }
- table {
+
+
+table {
   width: 100%;
 }
 
