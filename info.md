@@ -10,6 +10,7 @@ Blog/Radio de música autogestionada.
 
 # Software
 
+
 Esta web y la radio utiliza exclusivamente software libre:
 - El sistema operativo del servidor es Arch Linux.
 - El servidor web es nginx.
