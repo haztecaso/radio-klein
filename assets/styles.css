@@ -25,7 +25,9 @@ ul.inline li{ display:inline;}
 li{padding-right:0.3em;}
 
 img{
+    width:100%;
     max-width:100%;
+    margin:1em 0;
 }
 span.imgfooter{
     position:relative;
@@ -54,6 +56,7 @@ header{
     font-weight: bold;
     background:#f8f8f8;
 }
+header img{ display:none;}
 
 header a{ margin: 0 0.6em 0 0; text-decoration:none;}
 header a.right{ float: right; margin: 0 0 0 0.6em;}
@@ -103,7 +106,7 @@ footer{
     margin-right:15px;
     cursor:pointer;
 }
-.amplitude-playing{ background:url("pause.svg"); }
+.player .amplitude-playing{ background:url("pause.svg"); background-repeat:no-repeat; background-position:center; }
 .player .data { margin:0px; display: inline-block; position:relative;}
 .player .data span { display:block; margin-bottom:5px;}
 .player .data .title{font-weight:bold;}

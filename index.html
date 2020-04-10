@@ -2,6 +2,8 @@
 layout: default
 title: index
 ---
+
+<img src="{{ site.baseurl }}/assets/img/kleinradio.svg" alt="kleinradio" />
 {% for post in site.posts %}
 <article>
     <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time>{{ post.date | date: "%d/%m/%Y" }}</time></h2>
