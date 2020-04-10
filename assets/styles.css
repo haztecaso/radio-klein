@@ -84,3 +84,15 @@ footer{
     border-top:2px solid #bbb;
     font-weight: bold;
 }
+
+.amplitude-play-pause{
+    display:inline-block;
+    background:url("play.svg");
+    width:30px;
+    height:30px;
+    margin-right:10px;
+    cursor:pointer;
+}
+.amplitude-playing{
+    background:url("pause.svg");
+}

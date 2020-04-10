@@ -5,61 +5,25 @@ permalink: /radio/
 ---
 
 <h2>Radio Juan</h2>
-
-<audio controls>
-<source src="https://haztecaso.mooo.com:8085/radiojuan" type="audio/mpeg">
-Your browser does not supnport the audio element.
-</audio>
+<div class="amplitude-play-pause" data-amplitude-song-index="1"></div>
 <p id="titlejuan"></p>
 
 <h2>Radio Adri</h2>
-
-<audio controls>
-<source src="https://haztecaso.mooo.com:8085/radio" type="audio/mpeg">
-Your browser does not supnport the audio element.
-</audio>
+<div class="amplitude-play-pause" data-amplitude-song-index="0"></div>
 <p id="titleadri"></p>
 
+<script type="text/javascript" src="{{ site.baseurl }}/assets/amplitude.js"></script>
 <script>
-// delegate event for performance, and save attaching a million events to each anchor
-// copied from https://stackoverflow.com/questions/6016120/relative-url-to-a-different-port-number-in-a-hyperlink
-document.addEventListener('click', function(event) {
-  var target = event.target;
-  if (target.tagName.toLowerCase() == 'a')
-  {
-      var port = target.getAttribute('href').match(/^:(\d+)(.*)/);
-      if (port)
-      {
-         target.href = window.location.origin;
-         target.port = port[1];
-      }
-  }
-}, false);
-
-function getData(json){
-data = json;
-console.log(json);
- }
-
- function loadJSON(callback) {   
-
-    var xobj = new XMLHttpRequest();
-        xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'https://haztecaso.mooo.com:8085/status-json.xsl', true); // Replace 'appDataServices' with the path to your file
-    xobj.onreadystatechange = function () {
-          if (xobj.readyState == 4 && xobj.status == "200") {
-            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-            callback(xobj.responseText);
-          }
-    };
-    xobj.send(null);  
- }
-window.setInterval(function(){
-loadJSON(function(response) {
-	data = JSON.parse(response).icestats.source;
-	document.getElementById('titlejuan').innerHTML = data[1].title;
-	document.getElementById('titleadri').innerHTML = data[0].title;
- });
-}, 1000);
-
+Amplitude.init({
+  "songs": [
+    {
+      "url": "https://haztecaso.mooo.com:8085/radio",
+      "live": true
+    },
+    {
+      "url": "https://haztecaso.mooo.com:8085/radiojuan",
+      "live": true
+    }
+  ]
+});
 </script>
