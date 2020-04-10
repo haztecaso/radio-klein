@@ -1,0 +1,17 @@
+---
+layout: default
+title: index
+---
+
+{% for post in site.posts %}
+<article>
+    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time>{{ post.date | date: "%d/%m/%Y" }}</time></h2>
+    {{ post.excerpt }}
+    
+    {% if post.excerpt != post.content %}
+    <p class="more">
+        <a href="{{ site.baseurl }}{{ post.url }}">Leer más...</a>
+    </p>
+    {% endif %}
+</article>
+{% endfor %}

@@ -3,58 +3,9 @@ layout: default
 title: index
 ---
 
+<img src="{{ site.baseurl }}/assets/img/kleinradio.svg" alt="kleinradio"/>
 
-{% include player.html id="1" title="biciciclista" %}
-{% include player.html id="0" title="funkbike" %}
+<h1><a href="./fm">Radio online</a></h1>
+<br>
+<h1><a href="./blog">Blog</a></h1>
 
-{% for post in site.posts %}
-<article>
-    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time>{{ post.date | date: "%d/%m/%Y" }}</time></h2>
-    {{ post.excerpt }}
-    
-    {% if post.excerpt != post.content %}
-    <p class="more">
-        <a href="{{ site.baseurl }}{{ post.url }}">Leer más...</a>
-    </p>
-    {% endif %}
-</article>
-{% endfor %}
-
-<img src="{{ site.baseurl }}/assets/img/kleinradio.svg" alt="kleinradio" style="margin: 0 auto; max-width:500px;" />
-
-<script type="text/javascript" src="{{ site.baseurl }}/assets/amplitude.js"></script>
-<script>
-Amplitude.init({
-  "songs": [
-    {
-      "url": "https://haztecaso.mooo.com:8085/radio",
-      "live": true
-    },
-    {
-      "url": "https://haztecaso.mooo.com:8085/radiojuan",
-      "live": true
-    }
-  ]
-});
-
-
-function loadJSON(callback) {
-	var xobj = new XMLHttpRequest();
-	xobj.overrideMimeType("application/json");
-	xobj.open('GET', 'https://haztecaso.mooo.com:8085/status-json.xsl', true);
-	xobj.onreadystatechange = function () { if (xobj.readyState == 4 && xobj.status == "200") {callback(xobj.responseText);}};
-	xobj.send(null);
-}
-
-function getData(json){ data = json; console.log(json); }
-function update(){
-	loadJSON(function(response) {
-		data = JSON.parse(response.replace(": - ",": \"sin metadatos\"")).icestats.source;
-		document.getElementById('radiodata1').innerHTML = data[1].title;
-		document.getElementById('radiolisteners1').innerHTML = data[1].listeners;
-		document.getElementById('radiodata0').innerHTML = data[0].title;
-		document.getElementById('radiolisteners0').innerHTML = data[0].listeners;
-	});
-}
-window.setInterval(update, 1000);
-</script>
