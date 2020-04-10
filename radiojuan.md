@@ -4,6 +4,8 @@ title: "Radio Juan"
 permalink: /radiojuan/
 ---
 
-Aquí, de momento, voy a reproducir los discos que voy escuchando a lo largo del día.
+##Esta es mi radio de prueba.
+
+
 
 
