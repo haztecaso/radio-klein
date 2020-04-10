@@ -105,6 +105,10 @@ th {
   height: 50px;
 }
 
+th, td {
+  padding: 15px;
+}
+
 
 .player{
     height:72px;
