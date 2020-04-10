@@ -9,11 +9,13 @@ permalink: /radio/
 
 <p><div class="amplitude-play-pause" data-amplitude-song-index="1"></div></p>
 <p>Está sonando: <span id="titlejuan"></span></p>
+<p>Número de oyentes: <span id="listenersjuan"></span></p>
 
 <h2>Radio Adri</h2>
 <p>Música random.</p>
 <p><div class="amplitude-play-pause" data-amplitude-song-index="0"></div></p>
 <p>Está sonando: <span id="titleadri"></span></p>
+<p>Número de oyentes: <span id="listenersadri"></span></p>
 
 <script type="text/javascript" src="{{ site.baseurl }}/assets/amplitude.js"></script>
 <script>
@@ -48,7 +50,9 @@ window.setInterval(function(){
 	loadJSON(function(response) {
 		data = JSON.parse(response.replace(": - ",": \"archivo sin metadatos\"")).icestats.source;
 		document.getElementById('titlejuan').innerHTML = data[1].title;
+		document.getElementById('listenersjuan').innerHTML = data[1].listeners;
 		document.getElementById('titleadri').innerHTML = data[0].title;
+		document.getElementById('listenersadri').innerHTML = data[0].listeners;
 	});
 }, 1000);
 
