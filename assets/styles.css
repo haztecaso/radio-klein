@@ -84,6 +84,11 @@ footer{
     border-top:2px solid #bbb;
 }
 
+.player{
+
+
+}
+
 .amplitude-play-pause{
     display:inline-block;
     background:url("play.svg");
