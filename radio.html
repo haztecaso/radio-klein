@@ -56,7 +56,7 @@ window.setInterval(function(){
 	loadJSON(function(response) {
 		data = JSON.parse(response.replace(": - ",": \"archivo sin metadatos\"")).icestats.source;
 		document.getElementById('radiodata1').innerHTML = data[1].title;
-		document.getElementById('radiodata1').innerHTML = data[1].listeners;
+		document.getElementById('radiolisteners1').innerHTML = data[1].listeners;
 		document.getElementById('radiodata0').innerHTML = data[0].title;
 		document.getElementById('radiolisteners0').innerHTML = data[0].listeners;
 	});
