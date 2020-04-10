@@ -4,8 +4,9 @@ title: "Información"
 permalink: /info/
 ---
 
-Aquí subiremos información sobre el proyecto.
+# Blog/Radio
 
+Aquí subiremos información sobre el proyecto.
 Blog/Radio de música autogestionada.
 
 # Software
