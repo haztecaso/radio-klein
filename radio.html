@@ -46,7 +46,7 @@ function loadJSON(callback) {
 }
 window.setInterval(function(){
 	loadJSON(function(response) {
-		data = JSON.parse(response.replace(": - ",": \"-\"")).icestats.source;
+		data = JSON.parse(response.replace(": - ",": \"archivo sin metadatos\"")).icestats.source;
 		document.getElementById('titlejuan').innerHTML = data[1].title;
 		document.getElementById('titleadri').innerHTML = data[0].title;
 	});
