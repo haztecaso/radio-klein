@@ -29,6 +29,7 @@ img{
     max-width:100%;
     margin:1em 0;
 }
+
 span.imgfooter{
     position:relative;
     font-size:80%;
@@ -106,9 +107,9 @@ footer{
     margin-right:15px;
     cursor:pointer;
 }
+
 .player .amplitude-playing{ background:url("pause.svg"); background-repeat:no-repeat; background-position:center; }
 .player .data { margin:0px; display: inline-block; position:relative;}
-.player .data span { display:block; margin-bottom:5px;}
+.player .data span { display:block; margin-bottom:5px; max-width:300px; overflow:auto;}
 .player .data .title{font-weight:bold;}
 .player .data .listeners::after{content:' oyentes';}
-

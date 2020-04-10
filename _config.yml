@@ -2,7 +2,7 @@ title: "Cuaderno"
 author: "HC"
 description: ""
 url: "http://haztecaso.mooo.com"
-baseurl: "/blog"
+baseurl: "/radio"
 lang: "es"
 
 excerpt_separator: <!--more-->
@@ -13,8 +13,8 @@ markdown: kramdown
 kramdown:
   header_offset: 1
 
-permalink: /blog/:title/
-paginate_pathds: /blog/:num/
+permalink: /:title/
+paginate_pathds: /:num/
 paginate: 5
 
 exclude: [notes.md, _posts/2020-01-01-template.md]
