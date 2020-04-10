@@ -88,6 +88,12 @@ footer{
     border-top:2px solid #bbb;
 }
 
+table, th, td {
+  border: 1px solid black;
+}
+
+
+
 .player{
     height:72px;
     padding:10px;
@@ -113,3 +119,5 @@ footer{
 .player .data span { display:block; margin-bottom:5px; max-width:300px; overflow:auto;}
 .player .data .title{font-weight:bold;}
 .player .data .listeners::after{content:' oyentes';}
+
+
