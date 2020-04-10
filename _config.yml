@@ -11,7 +11,7 @@ plugins: [jekyll-paginate]
 
 markdown: kramdown
 kramdown:
-  header_offset: 2
+  header_offset: 1
 
 permalink: /blog/:title/
 paginate_pathds: /blog/:num/
