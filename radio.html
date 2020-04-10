@@ -29,4 +29,29 @@ Amplitude.init({
     }
   ]
 });
+
+function getData(json){
+	data = json;
+	console.log(json);
+}
+
+function loadJSON(callback) {
+	var xobj = new XMLHttpRequest();
+	xobj.overrideMimeType("application/json");
+	xobj.open('GET', 'https://haztecaso.mooo.com:8085/status-json.xsl', true);
+	xobj.onreadystatechange = function () {
+		if (xobj.readyState == 4 && xobj.status == "200") {callback(xobj.responseText);}
+	};
+	xobj.send(null);
+}
+window.setInterval(function(){
+	loadJSON(function(response) {
+		data = JSON.parse(response).icestats.source;
+		document.getElementById('titlejuan').innerHTML = data[1].title;
+		document.getElementById('titleadri').innerHTML = data[0].title;
+	});
+}, 1000);
+
+
+
 </script>
