@@ -89,7 +89,7 @@ footer{
 
 }
 .player ol li{ list-style:none;}
-.player ol li.metadata::before{ list-style:none;}
+.player ol li.listeners::after{content:' oyentes';}
 
 .amplitude-play-pause{
     display:inline-block;
