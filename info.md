@@ -9,6 +9,11 @@ permalink: /info/
 Aquí subiremos información sobre el proyecto.  
 Blog/Radio de música autogestionado.
 
+# Contacto
+
+Por ahora no estamos divulgando mucho esta página. Si estás aquí probablemente nos conoces y ya sabes cómo contactar con nosotros. Dentro de poco publicaremos alguna información de contacto.
+
+
 # Software
 
 
