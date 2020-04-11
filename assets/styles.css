@@ -47,9 +47,20 @@ code {
 	word-wrap: normal;
 }
 
-table { width:100%; border-collapse: collapse; }
-table, th, td { border: 1px solid black; }
-th, td { padding: 10px; }
+.tablecontainer{ width:100%; overflow-x:auto; }
+table {
+    width:100%;
+    border-collapse: collapse;
+    table-layout:auto;
+}
+
+table th, table td {
+    width:100%;
+    padding:9px;
+    box-sizing:border-box;
+    border: 1px solid black;
+    overflow: hidden;
+}
 
 .player{
     height:72px;
