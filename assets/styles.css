@@ -51,15 +51,16 @@ code {
 table {
     width:100%;
     border-collapse: collapse;
-    table-layout:auto;
+    table-layout:fixed;
 }
 
-table th, table td {
+th, td {
     width:100%;
     padding:9px;
     box-sizing:border-box;
     border: 1px solid black;
     overflow: hidden;
+    text-align:center;
 }
 
 .player{
