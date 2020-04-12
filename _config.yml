@@ -13,7 +13,7 @@ markdown: kramdown
 kramdown:
   header_offset: 1
 
-permalink: /:title/
+permalink: /:year/:month/:day/:title
 paginate_pathds: /:num/
 paginate: 5
 
