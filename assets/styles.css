@@ -71,6 +71,7 @@ th, td {
     border-radius:7px;white-space:nowrap;overflow:hidden;
 }
 .player > div { vertical-align:middle; }
+.player input {display:none;}
 .player .amplitude-play-pause{
     position:relative;
     display:inline-block;
