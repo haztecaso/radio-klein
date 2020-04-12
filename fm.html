@@ -3,10 +3,10 @@ layout: default
 title: FM
 ---
 
-{% include player.html id="1" title="biciciclista" %}
-{% include player.html id="0" title="funkbike" %}
+{% include player.html id="0" %}
+{% include player.html id="1" %}
 
-<h2>Programación</h2>
+<h2>Programación<time>Huso horario UTC+2</time></h2>
 <div class="tablecontainer">
 <table>
   <tr>
@@ -31,19 +31,21 @@ title: FM
 
 <script type="text/javascript" src="{{ site.baseurl }}/assets/amplitude.js"></script>
 <script>
-Amplitude.init({
-  "songs": [
-    {
-      "url": "https://haztecaso.mooo.com:8085/radio",
-      "live": true
-    },
-    {
-      "url": "https://haztecaso.mooo.com:8085/radiojuan",
-      "live": true
-    }
-  ]
+//Configuración radios
+stream_names = ["radiojuan","mpdroot"]; //Nombres de los streams, en el orden de los reproductores.
+updateInterval = 1700; // Tiempo de actualización de los metadatos (en milisegundos)
+url = "https://haztecaso.mooo.com:8085/"; //url del front-end encriptado de icecast (el del streaming es en :8000)
+
+//Código guapo radios
+amplitudesongs = [];
+stream_names.forEach(function(name){
+    amplitudesongs.push({
+        "url": url+name,
+        "live":true
+    });
 });
 
+Amplitude.init({"songs": amplitudesongs});
 
 function loadJSON(callback) {
 	var xobj = new XMLHttpRequest();
@@ -53,15 +55,27 @@ function loadJSON(callback) {
 	xobj.send(null);
 }
 
-function getData(json){ data = json; console.log(json); }
-function update(){
-	loadJSON(function(response) {
-		data = JSON.parse(response.replace(": - ",": \"sin metadatos\"")).icestats.source;
-		document.getElementById('radiodata1').innerHTML = data[1].title;
-		document.getElementById('radiolisteners1').innerHTML = data[1].listeners;
-		document.getElementById('radiodata0').innerHTML = data[0].title;
-		document.getElementById('radiolisteners0').innerHTML = data[0].listeners;
-	});
+function parseJSON(code){
+    data = JSON.parse(code.replace(": - ",": \"sin metadatos\"")).icestats.source;
+    if (!(data instanceof Array)){ data = [data]; }
+    return data;
 }
-window.setInterval(update, 1000);
+
+function update(){
+    loadJSON(function(response) {
+        data = parseJSON(response);
+        //Esto es muy cutre jajaja
+        stream_names.forEach(function(name,id,arr){
+            data.forEach(function(stream){
+                if (name == stream.listenurl.split(/[\s\/]+/).pop()){
+                    document.querySelector("#player"+id+" .data .title").innerHTML     = stream.server_name;
+                    document.querySelector("#player"+id+" .data .playing").innerHTML   = stream.title;
+                    document.querySelector("#player"+id+" .data .listeners").innerHTML = stream.listeners;
+                }
+            });
+        });
+    });
+}
+update();
+window.setInterval(update, updateInterval);
 </script>
