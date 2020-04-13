@@ -14,11 +14,23 @@ Blog/Radio de música autogestionado.
 Por ahora no estamos divulgando mucho esta página. Si estás aquí probablemente nos conoces y ya sabes cómo contactar con nosotros. Dentro de poco publicaremos alguna información de contacto.
 
 
-# Software
+# Ideas y tareas pendientes
 
+- Mejorar los reproductores: control de volumen y posición.
+- Ajustes de diseño de la web
+- Escribir documentación:
+    - Cómo participar en la radio. Se pueden grabar programas, escribir artículos en el blog, ayudar con la programación...
+    - Cómo grabar un programa.
+    - Cómo emitir en directo.
+    - Cómo hacer una radio online.
+- Chat abajo del reproductor streaming.
+
+# Software libre
 
 Esta web y la radio utiliza exclusivamente software libre:
-- El sistema operativo del servidor es Arch Linux.
-- El servidor web es nginx.
-- La web está construida con jekyll.
-- La radio usa mpd para reproducir la música y icecast para el streaming.
+- El sistema operativo del servidor es [Arch Linux](https://www.archlinux.org/){:target="_blank"}.
+- El servidor web es [nginx](https://www.nginx.com/){:target="_blank"}.
+- La web está construida con [jekyll](https://jekyllrb.com/){:target="_blank"}.
+- La radio usa [mpd](https://www.musicpd.org/) para reproducir la música y [icecast](https://www.icecast.org/){:target="_blank"} para el streaming.
+- Los reproductores de audio de la web están hechos con [amplitude.js](https://521dimensions.com/open-source/amplitudejs){:target="_blank"}.
+

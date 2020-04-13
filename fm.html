@@ -3,7 +3,15 @@ layout: default
 title: FM
 ---
 
-{% include streamplayer.html id="0" %}
+<div class="player">
+    <input type="range" class="amplitude-volume-slider" data-amplitude-song-index="0"/>
+    <div class="amplitude-play-pause" data-amplitude-song-index="0"></div>
+	<div class="data">
+        <span class="title">Radio stream</span>
+        <span class="playing">-</span>
+        <span class="listeners">0</span>
+	</div>
+</div>
 
 <h2>Programación<time>Huso horario UTC+2</time></h2>
 
@@ -23,27 +31,16 @@ title: FM
   </tr>
 </table>
 </div>
-
 <br>
-
-
 Próximamente estarán los podcast disponibles y la programación actualizada.
-
 <script>
 //Configuración radios
-stream_names = ["radio"]; //Nombres de los streams, en el orden de los reproductores.
 updateInterval = 1700; // Tiempo de actualización de los metadatos (en milisegundos)
-url = "https://haztecaso.mooo.com:8085/"; //url del front-end encriptado de icecast (el del streaming es en :8000)
 
-amplitudesongs = [];
-stream_names.forEach(function(name){
-    amplitudesongs.push({
-        "url": url+name,
-        "live":true
-    });
-});
-
-Amplitude.init({"songs": amplitudesongs});
+Amplitude.init({"songs": [{
+    "url": "https://haztecaso.mooo.com:8085/radio",
+    "live":true
+}]});
 
 function loadJSON(callback) {
 	var xobj = new XMLHttpRequest();
@@ -62,15 +59,12 @@ function parseJSON(code){
 function update(){
     loadJSON(function(response) {
         data = parseJSON(response);
-        //Esto es muy cutre jajaja
-        stream_names.forEach(function(name,id,arr){
-            data.forEach(function(stream){
-                if (name == stream.listenurl.split(/[\s\/]+/).pop()){
-                    document.querySelector("#player"+id+" .data .title").innerHTML     = stream.server_name;
-                    document.querySelector("#player"+id+" .data .playing").innerHTML   = stream.title;
-                    document.querySelector("#player"+id+" .data .listeners").innerHTML = stream.listeners;
-                }
-            });
+        data.forEach(function(stream){
+            if (stream.listenurl.split(/[\s\/]+/).pop() == "radio"){
+                document.querySelector(".player .data .title").innerHTML     = stream.server_name;
+                document.querySelector(".player .data .playing").innerHTML   = stream.title;
+                document.querySelector(".player .data .listeners").innerHTML = stream.listeners;
+            }
         });
     });
 }
