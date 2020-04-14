@@ -19,7 +19,7 @@ h2{ font-size: 100%; }
 h3{ font-size: 100%; }
 p{ margin-bottom:1.4em; line-height:1.35;}
 hr{ border:0; border-top: 2px solid #aaa; }
-ul{ margin-left: 20px;}
+ul{ margin-left: 20px; margin-bottom:1em;}
 p + ul { margin-top:-1em; }
 ul.inline li{ display:inline;}
 li{padding-right:0.3em;}
