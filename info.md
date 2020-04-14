@@ -9,7 +9,6 @@ permalink: /info/
 Aquí iremos subiremos información sobre la radio y blog. Todo el mundo está invitado a participar en la radio. Poco a poco iremos escribiendo documentación para explicaros con que y de que manera podéis contribuir.
 
 # Contacto
-
 Si estás aquí probablemente nos conoces y ya sabes cómo contactar con nosotros. Dentro de poco publicaremos alguna información de contacto.
 
 # Ideas y tareas pendientes
@@ -30,7 +29,7 @@ Esta web y la radio utiliza exclusivamente software libre:
 - El servidor web es [nginx](https://www.nginx.com/){:target="_blank"}.
 - La web está construida con [jekyll](https://jekyllrb.com/){:target="_blank"}.
 - La radio usa [mpd](https://www.musicpd.org/) para reproducir la música y [icecast](https://www.icecast.org/){:target="_blank"} para el streaming.
-- Los reproductores de audio de la web están hechos con [amplitude.js](https://521dimensions.com/open-source/amplitudejs){:target="_blank"}.
+- Los reproductores de audio de la web están hechos con [amplitude.js](https://521dimensions.com/open-source/amplitudejs){:target="_blank"}.  
 
 # Cookies
 
