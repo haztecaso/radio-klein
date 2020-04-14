@@ -6,8 +6,7 @@ permalink: /info/
 
 # Blog/Radio
 
-Aquí subiremos información sobre el proyecto.  
-Blog/Radio de música autogestionado.
+Aquí iremos subiremos información sobre la radio y blog. Todo el mundo está invitado a participar en la radio. Poco a poco iremos escribiendo documentación para explicaros con que y de que manera podéis contribuir.
 
 # Contacto
 
