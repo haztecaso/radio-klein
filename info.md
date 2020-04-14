@@ -33,4 +33,4 @@ Esta web y la radio utiliza exclusivamente software libre:
 
 # Datos y privacidad
 
-Almacenamos la menor información posible de nuestros usuarios. Ahora mismo se están guardando los logs predefinidos de [nginx](http://nginx.org/en/docs/http/ngx_http_log_module.html){:target="blank"} y una estadística del número de oyentes (sólo el número). En cuanto tenga tiempo de investigar el tema reduciré la información que captura nginx. ¡Se agradecen recomendaciones!
+Almacenamos la menor información posible de nuestros usuarios. Ahora mismo se están guardando los [logs predefinidos de nginx](http://nginx.org/en/docs/http/ngx_http_log_module.html){:target="blank"} y una estadística del número de oyentes (sólo el número). En cuanto tenga tiempo de investigar el tema reduciré la información que captura nginx. ¡Se agradecen recomendaciones!
