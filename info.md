@@ -11,8 +11,7 @@ Blog/Radio de música autogestionado.
 
 # Contacto
 
-Por ahora no estamos divulgando mucho esta página. Si estás aquí probablemente nos conoces y ya sabes cómo contactar con nosotros. Dentro de poco publicaremos alguna información de contacto.
-
+Si estás aquí probablemente nos conoces y ya sabes cómo contactar con nosotros. Dentro de poco publicaremos alguna información de contacto.
 
 # Ideas y tareas pendientes
 
@@ -34,3 +33,6 @@ Esta web y la radio utiliza exclusivamente software libre:
 - La radio usa [mpd](https://www.musicpd.org/) para reproducir la música y [icecast](https://www.icecast.org/){:target="_blank"} para el streaming.
 - Los reproductores de audio de la web están hechos con [amplitude.js](https://521dimensions.com/open-source/amplitudejs){:target="_blank"}.
 
+# Cookies
+
+Esta web no utiliza cookies.
