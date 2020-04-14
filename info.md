@@ -13,7 +13,6 @@ Si estás aquí probablemente nos conoces y ya sabes cómo contactar con nosotro
 
 # Ideas y tareas pendientes
 
-Almacenamos la menor información posible de nuestros usuarios. Ahora mismo se están guardando los logs de nginx y una estadística del número de oyentes. En cuanto tengamos tiempo de investigar el tema
 
 - Mejorar los reproductores: control de volumen y posición.
 - Ajustes de diseño de la web
@@ -35,3 +34,4 @@ Esta web y la radio utiliza exclusivamente software libre:
 
 # Datos y privacidad
 
+Almacenamos la menor información posible de nuestros usuarios. Ahora mismo se están guardando los logs de nginx y una estadística del número de oyentes. En cuanto tengamos tiempo de investigar el tema
