@@ -13,6 +13,8 @@ Si estás aquí probablemente nos conoces y ya sabes cómo contactar con nosotro
 
 # Ideas y tareas pendientes
 
+Almacenamos la menor información posible de nuestros usuarios. Ahora mismo se están guardando los logs de nginx y una estadística del número de oyentes. En cuanto tengamos tiempo de investigar el tema
+
 - Mejorar los reproductores: control de volumen y posición.
 - Ajustes de diseño de la web
 - Escribir documentación:
@@ -31,6 +33,5 @@ Esta web y la radio utiliza exclusivamente software libre:
 - La radio usa [mpd](https://www.musicpd.org/) para reproducir la música y [icecast](https://www.icecast.org/){:target="_blank"} para el streaming.
 - Los reproductores de audio de la web están hechos con [amplitude.js](https://521dimensions.com/open-source/amplitudejs){:target="_blank"}.
 
-# Cookies
+# Datos y privacidad
 
-Esta web no utiliza cookies.
