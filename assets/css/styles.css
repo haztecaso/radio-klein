@@ -75,7 +75,7 @@ th, td {
 .player .amplitude-play-pause{
     position:relative;
     display:inline-block;
-    background:url("play.svg");
+    background:url("../play.svg");
     background-repeat:no-repeat;
     background-position:center;
     width:35px;
@@ -84,7 +84,7 @@ th, td {
     margin-right:15px;
     cursor:pointer;
 }
-.player .amplitude-playing{ background:url("pause.svg"); background-repeat:no-repeat; background-position:center; }
+.player .amplitude-playing{ background:url("../pause.svg"); background-repeat:no-repeat; background-position:center; }
 .player .data {display: inline-block; }
 .player .data span { display:block; margin-bottom:2px; width:100%; }
 .player .data .title{font-weight:bold;}
