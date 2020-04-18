@@ -11,14 +11,18 @@ title: FM
         <span class="playing">-</span>
         <span class="listeners">0</span>
 	</div>
+	<div class="volumectl">
+		<span class="amplitude-volume-up fa fa-plus"></span>
+		<span class="volumeicon fa fa-volume-up"></span>
+		<span class="amplitude-volume-down fa fa-minus"></span>
+		<span class="indicator"></span>
+	</div>
 </div>
 
 <h2>Programación<time>Huso horario UTC+2</time></h2>
 
 <div class="tablecontainer">
 <table>
-      
-   
     <tr>
      <th style="width:80px;"></th>
     <th>Sábado 18<br></th>
@@ -47,26 +51,30 @@ title: FM
   <tr>
     <td>22.00</td>
     <td>Pedaleando</td>
-    <td></td>
+    <td>Kf1</td>
   </tr>
   <tr>
   <td>23.00</td>
   <td>Fake Narrow Terms-Techno Mixtape</td> 
   <td></td>
+  </tr>
 </table>
 </div>
 <br>
-<p>La programación se irá ampliando según vayamos recibiendo los programas que nos envían nuestros espontáneos colaboradores.</p>
+<p>La programación está viva: va ampliando según vamos recibiendo los programas de nuestros espontáneos colaboradores.</p>
 <hr><br>
 <p>Ya hemos subido los audios del domingo 12: <a href="../2020/04/12/estreno/">están aquí</a>.</p>
 <script>
 //Configuración radios
-updateInterval = 1700; // Tiempo de actualización de los metadatos (en milisegundos)
+updateInterval = 700; // Tiempo de actualización de los metadatos (en milisegundos)
 
 Amplitude.init({"songs": [{
     "url": "https://haztecaso.mooo.com:8085/radio",
-    "live":true
-}]});
+    "live":true,
+}],
+    "volume_increment": 10,
+    "volume_decrement": 10
+});
 
 function loadJSON(callback) {
 	var xobj = new XMLHttpRequest();
@@ -94,6 +102,30 @@ function update(){
         });
     });
 }
+function updatevol(){
+    vol = Amplitude.getConfig().volume;
+    volumecontrols = document.querySelectorAll("div.volumectl");
+    volumecontrols.forEach(function(control){
+        icon = control.querySelector(".volumeicon");
+        if (vol>=50){
+            icon.classList.add("fa-volume-up");
+            icon.classList.remove("fa-volume-down");
+            icon.classList.remove("fa-volume-off");
+        }
+        else if(vol < 50 && vol > 0){
+            icon.classList.remove("fa-volume-up");
+            icon.classList.add("fa-volume-down");
+            icon.classList.remove("fa-volume-off");
+        }
+        else if(vol == 0){
+            icon.classList.remove("fa-volume-up");
+            icon.classList.remove("fa-volume-down");
+            icon.classList.add("fa-volume-off");
+        }
+        indicator = control.querySelector(".indicator");
+        indicator.innerHTML = vol/10+"/10";
+    });
+}
 update();
-window.setInterval(update, updateInterval);
+window.setInterval(function(){update();updatevol();}, updateInterval);
 </script>

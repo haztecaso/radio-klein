@@ -53,7 +53,6 @@ table {
     border-collapse: collapse;
     table-layout:fixed;
 }
-
 th, td {
     width:100%;
     padding:9px;
@@ -64,27 +63,35 @@ th, td {
 }
 
 .player{
-    height:72px;
     padding:10px;
     margin: 20px 0;
     background:#e0e0e0;
-    border-radius:7px;white-space:nowrap;overflow:hidden;
+    border-radius:3px;white-space:nowrap;overflow:hidden;
 }
-.player > div { vertical-align:middle; }
+.player > div { vertical-align:middle; display:inline-block; line-height:1.4;}
 .player input {display:none;}
 .player .amplitude-play-pause{
     position:relative;
     display:inline-block;
-    background:url("../play.svg");
-    background-repeat:no-repeat;
-    background-position:center;
-    width:35px;
-    height:72px;
-    margin-left:10px;
-    margin-right:15px;
+    margin:0 10px;
     cursor:pointer;
+    font: normal normal normal 14px/1 ForkAwesome;
+    width:30px;
+    font-size: 2.2em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-.player .amplitude-playing{ background:url("../pause.svg"); background-repeat:no-repeat; background-position:center; }
+.player .amplitude-play-pause:before{content: "\f04b";}
+.player .amplitude-playing:before{content: "\f04c";}
+
+.player .volumectl {margin-right:5px; float:right;}
+.player .volumectl > span{ display:inline-block;}
+.player .volumectl .volumeicon {width:15px;}
+.player .volumectl .indicator { display:none;text-align:center; font-size:13px; font-family:courier;}
+.player .volumectl:hover > .indicator{display:block;}
+.player .volumectl .amplitude-volume-up,.player .volumectl .amplitude-volume-down {cursor:pointer;}
+
 .player .data {display: inline-block; }
 .player .data span { display:block; margin-bottom:2px; width:100%; }
 .player .data .title{font-weight:bold;}
@@ -102,7 +109,6 @@ header{
     background:#f8f8f8;
 }
 header img{ display:none;}
-
 header a{ margin: 0 0.6em 0 0; text-decoration:none;}
 header a.right{ margin: 0 0 0 0.6em;}
 
