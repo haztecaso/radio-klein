@@ -59,7 +59,9 @@ updateInterval = 700; // Tiempo de actualización de los metadatos (en milisegun
 
 Amplitude.init({"songs": [{
     "url": "https://haztecaso.mooo.com:8085/radio",
-    "live":true
+    "live":true,
+    "volume_increment": 10,
+    "volume_decrement": 10
 }]});
 
 function loadJSON(callback) {

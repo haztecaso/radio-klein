@@ -53,7 +53,6 @@ table {
     border-collapse: collapse;
     table-layout:fixed;
 }
-
 th, td {
     width:100%;
     padding:9px;
@@ -85,14 +84,9 @@ th, td {
 }
 .player .amplitude-play-pause:before{content: "\f04b";}
 .player .amplitude-playing:before{content: "\f04c";}
-
 .player .volumectl {margin-right:5px; float:right;}
 .player .volumectl > span{ display:inline-block;}
 .player .volumectl .amplitude-volume-up,.player .volumectl .amplitude-volume-down {cursor:pointer;}
-.player .volumectl .volumeicon{
-
- }
-
 .player .data {display: inline-block; }
 .player .data span { display:block; margin-bottom:2px; width:100%; }
 .player .data .title{font-weight:bold;}
@@ -110,7 +104,6 @@ header{
     background:#f8f8f8;
 }
 header img{ display:none;}
-
 header a{ margin: 0 0.6em 0 0; text-decoration:none;}
 header a.right{ margin: 0 0 0 0.6em;}
 
