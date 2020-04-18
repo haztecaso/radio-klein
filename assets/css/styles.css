@@ -84,9 +84,14 @@ th, td {
 }
 .player .amplitude-play-pause:before{content: "\f04b";}
 .player .amplitude-playing:before{content: "\f04c";}
+
 .player .volumectl {margin-right:5px; float:right;}
 .player .volumectl > span{ display:inline-block;}
+.player .volumectl .volumeicon {width:15px;}
+.player .volumectl .indicator { display:none;text-align:center; font-size:13px; font-family:courier;}
+.player .volumectl:hover > .indicator{display:block;}
 .player .volumectl .amplitude-volume-up,.player .volumectl .amplitude-volume-down {cursor:pointer;}
+
 .player .data {display: inline-block; }
 .player .data span { display:block; margin-bottom:2px; width:100%; }
 .player .data .title{font-weight:bold;}

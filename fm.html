@@ -15,6 +15,7 @@ title: FM
 		<span class="amplitude-volume-up fa fa-plus"></span>
 		<span class="volumeicon fa fa-volume-up"></span>
 		<span class="amplitude-volume-down fa fa-minus"></span>
+		<span class="indicator"></span>
 	</div>
 </div>
 
@@ -65,9 +66,10 @@ updateInterval = 700; // Tiempo de actualización de los metadatos (en milisegun
 Amplitude.init({"songs": [{
     "url": "https://haztecaso.mooo.com:8085/radio",
     "live":true,
+}],
     "volume_increment": 10,
     "volume_decrement": 10
-}]});
+});
 
 function loadJSON(callback) {
 	var xobj = new XMLHttpRequest();
@@ -97,8 +99,9 @@ function update(){
 }
 function updatevol(){
     vol = Amplitude.getConfig().volume;
-    icons = document.querySelectorAll("span.volumeicon");
-    icons.forEach(function(icon){
+    volumecontrols = document.querySelectorAll("div.volumectl");
+    volumecontrols.forEach(function(control){
+        icon = control.querySelector(".volumeicon");
         if (vol>=50){
             icon.classList.add("fa-volume-up");
             icon.classList.remove("fa-volume-down");
@@ -114,6 +117,8 @@ function updatevol(){
             icon.classList.remove("fa-volume-down");
             icon.classList.add("fa-volume-off");
         }
+        indicator = control.querySelector(".indicator");
+        indicator.innerHTML = vol/10+"/10";
     });
 }
 update();

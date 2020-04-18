@@ -18,8 +18,9 @@ Amplitude.init({
 
 function updatevol(){
     vol = Amplitude.getConfig().volume;
-    icons = document.querySelectorAll("span.volumeicon");
-    icons.forEach(function(icon){
+    volumecontrols = document.querySelectorAll("div.volumectl");
+    volumecontrols.forEach(function(control){
+        icon = control.querySelector(".volumeicon");
         if (vol>=50){
             icon.classList.add("fa-volume-up");
             icon.classList.remove("fa-volume-down");
@@ -35,6 +36,8 @@ function updatevol(){
             icon.classList.remove("fa-volume-down");
             icon.classList.add("fa-volume-off");
         }
+        indicator = control.querySelector(".indicator");
+        indicator.innerHTML = vol/10+"/10";
     });
 }
 window.setInterval(updatevol, 500);
