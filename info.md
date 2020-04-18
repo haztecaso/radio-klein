@@ -9,7 +9,8 @@ permalink: /info/
 Aquí iremos subiremos información sobre la radio y blog. Todo el mundo está invitado a participar en la radio. Poco a poco iremos escribiendo documentación para explicaros con que y de que manera podéis contribuir.
 
 # <span class="fa fa-envelope-o"></span> Contacto 
-Si estás aquí probablemente nos conoces y ya sabes cómo contactar con nosotros. Dentro de poco publicaremos alguna información de contacto.
+Si quieres contactar con nosotros, puedes enviarnos un correo electrónico a [radioemision@insiberia.net](mailto:radioemision@insiberia.net).
+¡Estamos esperando tus ideas y colaboraciones!
 
 
 # <span class="fa fa-linux"></span> Software libre 
@@ -28,6 +29,7 @@ Almacenamos la menor información posible de nuestros usuarios. Ahora mismo se e
 
 # <span class="fa fa-list-ul"></span> Ideas y tareas pendientes
 
+- Newsletter (rss).
 - Mejorar los reproductores: ~~control de volumen~~ y posición.
 - Ajustes de diseño de la web
 - ~~Chat abajo del reproductor streaming.~~ Supone muchas complicaciones.
