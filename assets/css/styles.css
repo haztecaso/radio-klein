@@ -69,27 +69,25 @@ th, td {
     border-radius:3px;white-space:nowrap;overflow:hidden;
 }
 .player > div { vertical-align:middle; display:inline-block; line-height:1.4;}
+.player .fa{transition:.2s;}
+.player .fa:hover{color:#444;}
 .player input {display:none;}
 .player .amplitude-play-pause{
     position:relative;
     display:inline-block;
     margin:0 10px;
     cursor:pointer;
-    font: normal normal normal 14px/1 ForkAwesome;
     width:30px;
     font-size: 2.2em;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 .player .amplitude-play-pause:before{content: "\f04b";}
 .player .amplitude-playing:before{content: "\f04c";}
-
 .player .volumectl {margin-right:5px; float:right;}
 .player .volumectl > span{ display:inline-block;}
 .player .volumectl .volumeicon {width:15px;}
-.player .volumectl .indicator { display:none;text-align:center; font-size:13px; font-family:courier;}
-.player .volumectl:hover > .indicator{display:block;}
+.player .volumectl .volumeicon:hover {color:black;}
+.player .volumectl .indicator { display:block;text-align:center; font-size:13px; font-family:courier;opacity:0; transition:.4s;}
+.player .volumectl .fa:hover ~ .indicator{opacity:1;}
 .player .volumectl .amplitude-volume-up,.player .volumectl .amplitude-volume-down {cursor:pointer;}
 
 .player .data {display: inline-block; }

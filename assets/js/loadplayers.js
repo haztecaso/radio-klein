@@ -11,6 +11,7 @@ players.forEach(function(player, i){
 });
 
 Amplitude.init({
+    "bindings": { 32: 'play_pause'},
     "songs": amplitudesongs,
     "volume_increment": 10,
     "volume_decrement": 10

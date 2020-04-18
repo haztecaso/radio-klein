@@ -4,8 +4,8 @@ title: FM
 ---
 
 <div class="player">
-    <input type="range" class="amplitude-volume-slider" data-amplitude-song-index="0"/>
-    <div class="amplitude-play-pause" data-amplitude-song-index="0"></div>
+    <input type="range" class="amplitude-volume-slider" data-amplitude-song-index="1"/>
+    <div class="amplitude-play-pause fa" data-amplitude-song-index="1"></div>
 	<div class="data">
         <span class="title">Radio stream</span>
         <span class="playing">-</span>
@@ -63,10 +63,7 @@ title: FM
 //Configuración radios
 updateInterval = 700; // Tiempo de actualización de los metadatos (en milisegundos)
 
-Amplitude.init({"songs": [{
-    "url": "https://haztecaso.mooo.com:8085/radio",
-    "live":true,
-}],
+Amplitude.init({"songs": [{},{"url": "https://haztecaso.mooo.com:8085/radio","live":true,}],
     "volume_increment": 10,
     "volume_decrement": 10
 });
