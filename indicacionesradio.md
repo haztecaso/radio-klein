@@ -13,6 +13,9 @@ Esta página está en construcción, pero aquí van unas indicaciones:
 - **Nombre y descripción:**  Necesitamos un nombre y una breve descripción del programa, así como un nombre y una breve descripción del episodio. Las descripciones son para cuando publiquemos los podcast, pero si no te apetece describir nada pues no pondremos nada, jaja.
 - **Volumen:** Es importante que el volumen de el programa esté bastante igualado, incluyendo tanto a las canciones como a tu voz, que debería estar alta y clara.
 - **Confirmación y envío:** Esta parte es muy importante. Consta de dos fases: confirmación y envío de archivo. Cuanto antes nos confirmes mejor, así vamos organizando la programación. Cómo último día para confirmar de cara al fin de semana es el miércoles, y el último día para enviarnos el archivo de audio es el jueves por la noche. Fuera de plazo seguramente se pase todo a la siguiente semana.
-
+- **Lista de canciones:** Muchas oyentes nos piden la lista de canciones de los programas. Considera la opción de mandárnosla junto al archivo de audio para que la pongamos junto al podcast. El formato básico sería el siguiente, aunque puedes añadir álbum, año, comentarios...:
+   -1. Canción-Artista
+   -2. ..........
+   -3. ..........
   
 Correo: [radioemision@insiberia.net](mailto:radioemision@insiberia.net)

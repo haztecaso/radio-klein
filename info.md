@@ -30,9 +30,10 @@ Almacenamos la menor información posible de nuestros usuarios. Ahora mismo se e
 # <span class="fa fa-list-ul"></span> Ideas y tareas pendientes
 
 - Newsletter (rss).
-- Mejorar los reproductores: ~~control de volumen~~ y posición.
+- Mejorar los reproductores: ~~control de volumen~~ y posición. En los podcast que el play pause play no te lleve al inicio.
 - Ajustes de diseño de la web
 - ~~Chat abajo del reproductor streaming.~~ Supone muchas complicaciones.
+
 - Escribir documentación:
   - Cómo participar en la radio. Se pueden grabar programas, escribir artículos en el blog, ayudar con la programación...
   - Cómo grabar un programa. Dejo aquí el boceto:
