@@ -54,4 +54,4 @@ Almacenamos la menor información posible de nuestros usuarios. Ahora mismo se e
 - Hacer página con todos los podcast, hacer página con todos los programas, hacer página para cada programa. Evidentemente esto hay que conseguir hacerlo automático
 - Establecer un canal de comunicación.
 - Algún documento o sitio donde ir poniendo la gente que ha confirmado...
-- Hacer una página de cómo puedes colaborar..
+
