@@ -36,7 +36,7 @@ Almacenamos la menor información posible de nuestros usuarios. Ahora mismo se e
 - Escribir documentación:
   - Cómo participar en la radio. Se pueden grabar programas, escribir artículos en el blog, ayudar con la programación...
   - Cómo grabar un programa. Dejo aquí el boceto:
-    - Software: Para hacer el programa, te recomendamos que lo grabes con la aplicación de software libre Audacity, que la puedes descargar en su página. Aquí tienes un tutorial bastante completo.
+    - Software: Para hacer el programa, te recomendamos que lo grabes con la aplicación de software libre Audacity, que la puedes descargar [en su página](https://audacity.es/). Aquí tienes un [tutorial](https://invidio.us/watch?v=qToqbeZ4xqk) bastante completo.
     - Duración: Si tu formato es de media hora, que sean 29 minutos justos, y en cambio si es de una hora, que sean 59 justos. Esto es importante para poder programar todo sin que sea un lío tremendo, dejando un minuto para las cortinillas. Y procura también que acabe más o menos justito, que no haya muchos segundos de silencio al final del archivo.
     - Formato: El formato en el que se reproducen los archivos en el streaming es MP3, así que mándanoslo si puedes, en MP3, preferiblemente 320kbps. El Audacity no tiene por defecto el plugin para el MP3, así que puedes o instalarte el plugin o mandárnoslo en wav.  Este archivo será el mismo que pongamos en el podcast.
     - Nombre y descripción:  Necesitamos un nombre y una breve descripción del programa, así como un nombre y una breve descripción del episodio. Las descripciones son para cuando publiquemos los podcast, pero si no te apetece describir nada pues no pondremos nada, jaja.
