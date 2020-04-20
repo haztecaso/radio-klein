@@ -13,8 +13,9 @@ No queremos ser demasiado estrictos con la duración del programa, pero para pod
 # ¿Cómo tengo que exportar el audio?
 Si lo exportas en formato mp3, por favor ajusta el bitrate a por lo menos 256kbps. Lo ideal sería en 320kbps.
 
+# Metadatos
+artist - song
+
 # ¿Cómo os envío un episodio?
 Puedes subirlo a esta carpeta compartida: poner link
 
-# Metadatos
-artist - song
