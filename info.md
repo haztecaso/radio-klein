@@ -37,8 +37,7 @@ Almacenamos la menor información posible de nuestros usuarios. Ahora mismo se e
 - Hablar sobre la ilegalidad del proyecto
 - Escribir documentación:
   - Cómo participar en la radio. Se pueden grabar programas, escribir artículos en el blog, ayudar con la programación...
-  - Cómo grabar un programa. [/radio/indicacionesradio/](Aquí) el boceto.
-   
+  - Cómo grabar un programa. [Aquí](/radio/indicacionesradio) el boceto.   
   - Cómo emitir en directo.
   - Cómo hacer una radio online.
 - Hacer un formulario de envío que permita automatizar todo:      
