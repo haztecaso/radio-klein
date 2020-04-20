@@ -52,3 +52,6 @@ Almacenamos la menor información posible de nuestros usuarios. Ahora mismo se e
     - Molaría que también se añadiese el podcast automáticamente al terminar la fecha de emisión
     - Para todo esto la parrilla tiene que estar montada de antes, claro, lo cual no se si es lo mejor. Además hay que confiar en que la gente que confirma nos envía el programa.
 - Hacer página con todos los podcast, hacer página con todos los programas, hacer página para cada programa. Evidentemente esto hay que conseguir hacerlo automático
+- Establecer un canal de comunicación.
+- Algún documento o sitio donde ir poniendo la gente que ha confirmado...
+- Hacer una página de cómo puedes colaborar..
