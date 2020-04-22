@@ -19,7 +19,7 @@ Visto el rápido crecimiento que está teniendo la radio, estamos empezando a or
 {% include audioplayer.html title="Cutrinhos" desc="audio en elaboración..." url="/"%}
 {% include audioplayer.html title="Paréntesis" desc="" url="/parentesis/2020-04-19-19-00-Segundo-parentesis.mp3"%}
 {% include audioplayer.html title="Tardes con Grego" desc="" url="/tardes-con-grego/voces-extranas.mp3"%}
-{% include audioplayer.html title="Calle Bolivia" desc="" url="/callebolivia1.mp3"%}
+{% include audioplayer.html title="Calle Bolivia" desc="" url="/calle-bolivia/callebolivia1.mp3"%}
 
 # Programación
 <div class="tablecontainer">
