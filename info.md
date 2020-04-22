@@ -29,25 +29,5 @@ Almacenamos la menor información posible de nuestros usuarios. Ahora mismo se e
 
 # <span class="fa fa-list-ul"></span> Ideas y tareas pendientes
 
-- Newsletter (rss).
-- Mejorar los reproductores: ~~control de volumen~~ y posición. En los podcast que el play pause play no te lleve al inicio.
-- Ajustes de diseño de la web
-- ~~Chat abajo del reproductor streaming.~~ Supone muchas complicaciones.
-- Decidir definitivamente el nombre
-- Hablar sobre la ilegalidad del proyecto
-- Escribir documentación:
-  - Cómo participar en la radio. Se pueden grabar programas, escribir artículos en el blog, ayudar con la programación...
-  - Cómo grabar un programa. [Aquí](/radio/indicacionesradio) el boceto.   
-  - Cómo emitir en directo.
-  - Cómo hacer una radio online.
-- Hacer un formulario de envío que permita automatizar todo:      
-    - Que ponga la fecha y hora del programa para que se vaya creando automáticamente una lista de reproducción en, quizás, ncmpcmcmppcmpcppcc, o al menos que se ordene en un directorio del servidor para que nos sea quasi-automático montarlo. Para esto quizás que cambie el nombre del archivo a Año-mes-día-hora de emisión (?)
-    - Que ponga una descripción del programa para que se cree una página automática del programa con el archivo de podcast del programa.
-    - Molaría que también se añadiese el podcast automáticamente al terminar la fecha de emisión
-    - Para todo esto la parrilla tiene que estar montada de antes, claro, lo cual no se si es lo mejor. Además hay que confiar en que la gente que confirma nos envía el programa.
-- Hacer página con todos los podcast, hacer página con todos los programas, hacer página para cada programa. Evidentemente esto hay que conseguir hacerlo automático
-- Establecer un canal de comunicación.
-- Algún documento o sitio donde ir poniendo la gente que ha confirmado...
-- ORGANIZAR el trabajo. Grupos de trabajo, etc.
-- Problema del dominio, solucionarlo.
-
+Estamos recopilando las tareas pendientes en un pad de [cryptpad.fr](https://cryptpad.fr/kanban/#/2/kanban/edit/V-1N63apM52xC1hfDiU6V9VQ/).
+¡Sientete libre de añadir tu propuesta en la categoría de ideas!
