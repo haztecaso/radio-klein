@@ -1,0 +1,13 @@
+---
+layout: default
+title: Paréntesis
+---
+<ul>
+{% for member in site.data.parentesis %}
+  <li>
+    <a href="https://github.com/{{ member.github }}">
+      {{ member.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>

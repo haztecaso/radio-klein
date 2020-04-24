@@ -1,0 +1,14 @@
+name: Parentesis
+description: músicas del mundo
+url-folder: parentesis
+episodes:
+  - timestamp: 12/04/2020 18:00
+    title: Primer paréntesis
+    desc: Funk session
+    file: 2020-04-12-18-00-Primer-parentesis.mp3
+
+  - datetime: 19/04/2020 19:00
+    title: Segundo paréntesis
+    desc: Ritmos jamaicanos
+    file: 2020-04-19-19-00-Segundo-parentesis.mp3
+
