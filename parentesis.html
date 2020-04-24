@@ -2,12 +2,9 @@
 layout: default
 title: Paréntesis
 ---
+<h2></h2>
 <ul>
-{% for member in site.data.parentesis %}
-  <li>
-    <a href="https://github.com/{{ member.github }}">
-      {{ member.name }}
-    </a>
-  </li>
+{% for episode in site.data.parentesis.episodes %}
+      {{ episode.title }}
 {% endfor %}
 </ul>
