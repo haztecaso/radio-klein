@@ -1,14 +1,6 @@
-<div class="player" data-url="{{ include.url }}">
-    <input type="range" class="amplitude-volume-slider" data-amplitude-song-index=""/>
-    <div class="amplitude-play-pause fa" data-amplitude-song-index=""></div>
-	<div class="data">
-        <span class="title">{{ include.title }}</span>
-        <span class="playing">{{ include.desc }}</span>
-	</div>
-	<div class="volumectl">
-		<span class="amplitude-volume-up fa fa-plus"></span>
-		<span class="volumeicon fa fa-volume-up"></span>
-		<span class="amplitude-volume-down fa fa-minus"></span>
-		<span class="indicator"></span>
-	</div>
-</div>
+<h3>{{ include.title }}</h3>
+<p>{{ include.desc }}</p>
+<audio controls>
+  <source src="https://haztecaso.mooo.com/podcasts{{ include.url }}" type="audio/ogg">
+Lo sentimos, tu navegador no es compatible con el elemento de audio. Puedes descargarte el programa haciendo click <a href="https://haztecaso.mooo.com/podcasts{{ include.url }}">aqui</a>.
+</audio>
