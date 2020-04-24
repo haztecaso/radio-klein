@@ -2,5 +2,6 @@
 layout: default
 ---
 
-{% assign podcast = site.data[page.podcast] %}
+{% assign name = page.podcast %}
+{% assign podcast = site.data.name %}
 {{ podcast.title }}
