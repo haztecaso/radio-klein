@@ -1,8 +1,16 @@
 ---
 layout: default
 ---
-
 {% assign name = page.podcast %}
-{% assign podcast = site.data.name %}
 {% assign podcast = site.data.parentesis %}
-{{ podcast.title }}
+<h2>{{ podcast.name }}</h2>
+<p>{{ podcast.description }}</p>
+
+<h2>Episodios</h2>
+{% for episode in podcast.episodes %}
+{% capture url %}
+/{{ podcast.url-folder }}/{{ episode.file }}
+{% endcapture%}
+{% include audioplayer.html title=episode.title desc=episode.desc url=url%}
+<br>
+{% endfor %}
