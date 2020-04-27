@@ -19,8 +19,8 @@ Hemos tenido un tercer fin de semana con muchos programas. Aquí os dejamos los 
 # Programas del domingo 26
 {% include audioplayer.html title="Cutrinhos" desc="" url="/cutrinhos/Cutrinhos3.mp3"%}
 {% include audioplayer.html title="Paréntesis" desc="Audio en proceso..." url=""%}
-{% include audioplayer.html title="Tardes con Grego" desc="" url="/tardes-con-grego/voces-extranas-2.mp3"%&}
-{% include audioplayer.html title="Nicolino Locche" desc="" url="/nicolino-locche/nicolino-locche-1.mp3"%}
+{% include audioplayer.html title="Tardes con Grego" desc="" url="/tardes-con-grego/voces-extranas-2.mp3"%}
+{% include audioplayer.html title="Nicolino Locche" desc="" url="/nicolino-locche/nicolino-locche-1.wav"%}
 {% include audioplayer.html title="Ausfahrt" desc="" url="/ausfahrt/ausfahrt-1.mp3"%}
 
 
