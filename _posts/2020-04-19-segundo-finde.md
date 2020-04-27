@@ -18,7 +18,7 @@ Visto el rápido crecimiento que está teniendo la radio, estamos empezando a or
 # Programas del domingo 19
 {% include audioplayer.html title="Cutrinhos" desc="" url="/cutrinhos/Cutrinhos2.mp3"%}
 {% include audioplayer.html title="Paréntesis" desc="" url="/parentesis/2020-04-19-19-00-Segundo-parentesis.mp3"%}
-{% include audioplayer.html title="Tardes con Grego" desc="" url="/tardes-con-grego/voces-extranas.mp3"%}
+{% include audioplayer.html title="Tardes con Grego" desc="" url="/tardes-con-grego/voces-extranas-1.mp3"%}
 {% include audioplayer.html title="Calle Bolivia" desc="" url="/calle-bolivia/callebolivia1.mp3"%}
 
 # Programación
