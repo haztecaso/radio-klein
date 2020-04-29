@@ -15,6 +15,6 @@ kramdown:
 
 permalink: /:year/:month/:day/:title/
 paginate_pathds: /:num/
-paginate: 5
+paginate: 6
 
 exclude: [notes.md, _posts/2020-01-01-template.md]
