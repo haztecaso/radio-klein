@@ -34,7 +34,7 @@ title: FM
 //Configuración radios
 updateInterval = 700; // Tiempo de actualización de los metadatos (en milisegundos)
 
-Amplitude.init({"songs": [{},{"url": "https://haztecaso.mooo.com:8085/radio","live":true,}],
+Amplitude.init({"songs": [{},{"url": "https://stream.haztecaso.com/radio","live":true,}],
     "volume_increment": 10,
     "volume_decrement": 10
 });
@@ -42,7 +42,7 @@ Amplitude.init({"songs": [{},{"url": "https://haztecaso.mooo.com:8085/radio","li
 function loadJSON(callback) {
 	var xobj = new XMLHttpRequest();
 	xobj.overrideMimeType("application/json");
-	xobj.open('GET', 'https://haztecaso.mooo.com:8085/status-json.xsl', true);
+	xobj.open('GET', 'https://stream.haztecaso.com/status-json.xsl', true);
 	xobj.onreadystatechange = function () { if (xobj.readyState == 4 && xobj.status == "200") {callback(xobj.responseText);}};
 	xobj.send(null);
 }
