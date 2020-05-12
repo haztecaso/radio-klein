@@ -1,7 +1,75 @@
----
-layout: default
-title: FM
----
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <title>Radio Klein</title>
+    <script type="text/javascript" src="/radio/assets/js/amplitude.js"></script>
+    <link rel="stylesheet" href="/radio/assets/fork-awesome/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+body{width:100%; max-width:760px;}
+table {
+    width:100%;
+    border-collapse: collapse;
+    table-layout:fixed;
+    margin-bottom:1em;
+}
+th, td {
+    width:100%;
+    padding:9px;
+    box-sizing:border-box;
+    border: 1px solid gray;
+    overflow: hidden;
+    text-align:center;
+}
+
+.player{
+    padding:10px;
+    margin: 20px 0;
+    background:#000;
+    border-radius:3px;white-space:nowrap;overflow:hidden;
+}
+.player > div { vertical-align:middle; display:inline-block; line-height:1.4;}
+.player .fa{transition:.2s;}
+.player .fa:hover{color:#444;}
+.player input {display:none;}
+.player .amplitude-play-pause{
+    position:relative;
+    display:inline-block;
+    margin:0 10px;
+    cursor:pointer;
+    width:30px;
+    font-size: 2.2em;
+}
+.player .amplitude-play-pause:before{content: "\f04b";}
+.player .amplitude-playing:before{content: "\f04c";}
+.player .volumectl {margin-right:5px; float:right;}
+.player .volumectl > span{ display:inline-block;}
+.player .volumectl .volumeicon {width:15px;}
+.player .volumectl .volumeicon:hover {color:black;}
+.player .volumectl .indicator { display:block;text-align:center; font-size:13px; font-family:courier;opacity:0; transition:.4s;}
+.player .volumectl .fa:hover ~ .indicator{opacity:1;}
+.player .volumectl .amplitude-volume-up,.player .volumectl .amplitude-volume-down {cursor:pointer;}
+
+.player .data {display: inline-block; }
+.player .data span { display:block; margin-bottom:2px; width:100%; }
+.player .data .title{font-weight:bold;}
+.player .data .listeners::after{content:' oyentes';}
+
+iframe{
+	max-width:760px;
+	width:100%;
+	height:400px;
+	border:solid 1px gray;
+}
+
+    </style>
+</head>
+
+<h1>Radio</h1>
 
 <div class="player">
 	<input type="range" class="amplitude-volume-slider" data-amplitude-song-index="1"/>
@@ -21,10 +89,10 @@ title: FM
 
 <p>Tendrás que esperar unos segundos hasta que empiece a sonar la radio.</p>
 
-<h2>Programación<time>Huso horario UTC+2</time></h2>
+<h2>Programación</h2>
 <table>
 	<tr>
-		<th></th>
+		<th><small>Huso horario UTC+2</small></th>
 		<th>Sábado 9<br></th>
 		<th>Domingo 10</th>
 	</tr>
@@ -46,6 +114,9 @@ title: FM
 		<td>R-010</td>
 	</tr>
 </table>
+
+<h2>Archivo</h2>
+<iframe src="./archivo"></iframe>
 <br>
 <p>La programación está viva: va ampliando según vamos recibiendo los programas de nuestros espontáneos colaboradores.</p>
 <p>Si tienes algo que sugerirnos, proponernos o comentarnos no dudes en contactarnos en <a href="radioemision@insiberia.net">radioemision@insiberia.net</a></p>
@@ -123,3 +194,6 @@ function updatevol(){
 update();
 window.setInterval(function(){update();updatevol();}, updateInterval);
 	</script>
+
+  </body>
+</html>
